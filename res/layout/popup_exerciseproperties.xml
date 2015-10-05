@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View 
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+    
+    <Button 
+        android:id="@+id/switchRepeats"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/repeats"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/center"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/switch_on_selector" />
+    <Button 
+        android:id="@+id/switchTime"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/center"
+        android:layout_alignBottom="@+id/switchRepeats"
+        android:background="@drawable/switch_off_selector" />
+    
+    <NumberPicker 
+        android:id="@+id/switchingPicker"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/switchRepeats"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:layout_centerHorizontal="true" />
+    <TextView 
+        android:id="@+id/secondsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seconds"
+        android:layout_toRightOf="@+id/switchingPicker"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/switchingPicker"
+        android:layout_alignBottom="@+id/switchingPicker"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        style="@style/text_black_18" />
+
+</RelativeLayout>

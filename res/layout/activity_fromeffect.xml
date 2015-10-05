@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+	<Button 
+	    android:id="@+id/backButton"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/back_button"
+	    android:onClick="back" />
+    <TextView 
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_effect"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/backButton"
+        android:layout_marginLeft="20dp"
+        style="@style/text_black_18" />
+    <View 
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+    
+    <ListView 
+        android:id="@+id/effectList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_above="@+id/generateButton"
+        android:divider="@drawable/divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/item_selector"
+    android:background="@color/light_grey" />
+    
+    <View 
+        android:id="@+id/lineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:layout_below="@+id/effectList"
+        android:layout_centerHorizontal="true" />
+    
+    <Button 
+        android:id="@+id/generateButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:onClick="generate"
+        android:text="@string/generate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        style="@style/text_white_bold_18" />
+    
+    <RadioButton 
+        android:id="@+id/radioAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_auto"
+        style="@style/text_black_18"
+        android:layout_below="@+id/effectList"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:checked="true" />
+    <RadioButton 
+        android:id="@+id/radio4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_4"
+        style="@style/text_black_18"
+        android:layout_toRightOf="@+id/radioAuto"
+        android:layout_alignTop="@+id/radioAuto"
+        android:layout_marginRight="15dp" />
+    <RadioButton 
+        android:id="@+id/radio5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_5"
+        style="@style/text_black_18"
+        android:layout_toRightOf="@+id/radio4"
+        android:layout_alignTop="@+id/radioAuto"
+        android:layout_marginRight="15dp" />
+    <RadioButton 
+        android:id="@+id/radio6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_6"
+        style="@style/text_black_18"
+        android:layout_below="@+id/radioAuto"
+        android:layout_alignLeft="@+id/radioAuto"
+        android:layout_marginTop="5dp" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_black_18"
+        android:textColor="@color/grey"
+        android:layout_alignBaseline="@+id/radio6"
+        android:layout_toRightOf="@+id/radio6"
+        android:layout_marginLeft="20dp"
+        android:text="@string/num_exercises" />
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_top"
+        android:layout_alignBottom="@+id/effectList" />
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/effectList"
+        android:background="@drawable/shadow_bottom" />
+
+</RelativeLayout>

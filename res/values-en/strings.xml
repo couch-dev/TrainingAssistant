@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<string name="crash_dialog_title">TrainAssist has crashed :(</string>
+	<string name="crash_dialog_text">Click OK to send the error report via email.</string>
+	<string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+	<string name="crash_dialog_ok_toast">Thank you!</string>
+	
+    <string name="app_name">TrainAssist</string>
+    <string name="workouts">Workouts</string>
+    <string name="start_training">Start training!</string>
+    <string name="new_workout">Create workout</string>
+    <string name="from_exercises">From exercises</string>
+    <string name="from_effect">From effect</string>
+    <string name="set_name">Name:</string>
+    <string name="set_name_hint">my workout</string>
+    <string name="number">-1</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved</string>
+    <string name="error_saving">Error while saving</string>
+    <string name="choose_workout">Choose a workout</string>
+    <string name="choose_exercises">Choose the exercises</string>
+    <string name="training_properties">Training settings</string>
+    <string name="start">Start!</string>
+    <string name="set_training">Set</string>
+    <string name="interval_training">Interval</string>
+    <string name="training">Training</string>
+    <string name="workout">Workout</string>
+    <string name="pause">Pause</string>
+    <string name="seconds">Seconds</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+    <string name="repeats">Repeats</string>
+    <string name="time">Time</string>
+    <string name="times">times</string>
+    <string name="secs">sec.</string>
+    <string name="delete_workout">Delete workout</string>
+    <string name="delete">Delete</string>
+    <string name="next">Next</string>
+    <string name="done">Done</string>
+    <string name="back">Back</string>
+    <string name="action_time">00:00</string>
+    <string name="warmup">Warmup!</string>
+    <string name="cooldown">Cooldown!</string>
+    <string name="iterations">Iterations</string>
+    <string name="up_next">up next</string>
+    <string name="statistics">Statistics</string>
+    <string name="apply_settings">Apply setting</string>
+    <string name="your_week">Your week</string>
+    <string name="again_toworrow">Again tomorrow?</string>
+    <string name="check_workouts_howto">Press and hold to check or uncheck a workout</string>
+    <string name="this_exercise_trains">This exercise trains:</string>
+    <string name="close">Close</string>
+    <string name="create_workout">Choose your desired creating method</string>
+    <string name="set_effect">Set the effects</string>
+    <string name="generate">Generate</string>
+    <string name="intensity">Intensity</string>
+    <string name="dont_forget_name">Please choose a name for the workout!</string>
+    <string name="must_not_be_empty">Please select at least one exercise!</string>
+    <string name="too_few_tags">Please choose more!</string>
+    <string name="and">and</string>
+    <string name="all_of_em">All of \&#39;em!</string>
+    <string name="and_more">and more</string>
+    <string name="workouts_per_week">Workouts per week</string>
+    <string name="favorite_is">Your favorite exercise is</string>
+    <string name="favorites_are">Your favorite exercises are</string>
+    <string name="try_one_of_these">Why don\&#39;t you try one of these exercises in your next workout</string>
+    <string name="overall_rating">Overall rating</string>
+    <string name="starting_in">starting in</string>
+    <string name="really_delete_workout">Do you really want to delete this workout</string>
+    <string name="rating">Rating</string>
+    <string name="about">About</string>
+    <string name="about_title">Learn more</string>
+    <string name="theme_color">Theme color</string>
+    <string name="training_stats">Training statistics:</string>
+    <string name="radio_4">4</string>
+    <string name="radio_5">5</string>
+    <string name="radio_6">6</string>
+    <string name="radio_auto">auto</string>
+    <string name="num_exercises">number exercises</string>
+    <string name="no_statistics_available">No statistics available yet.</string>
+    <string name="no_workouts_created">There haven\&#39;t been any workouts created yet.</string>
+    <string name="no_workouts_available">No workouts available yet.</string>
+    <!-- all exercises -->
+    <string name="burpees">Burpees</string>
+    <string name="oh_pushups">Over head pushups</string>
+    <string name="swimmer">Swimmer</string>
+    <string name="downhill_pos">Downhill position</string>
+    <string name="straight_arms_pos">Straight arms position</string>
+    <string name="longstep_squats">Long step squats</string>
+    <string name="pushups">Pushups</string>
+    <string name="bug">Bug</string>
+    <string name="cruches">Crunches</string>
+    <string name="squats">Squats</string>
+    <string name="fast_squats">Fast squats</string>
+    <string name="skippings">Skippings</string>
+    <string name="bat">Bat</string>
+    <string name="squat_jumps">Squat jumps</string>
+    <string name="climbers">Climbers</string>
+    <string name="alternating_jumps">Alternating jumps</string>
+    <string name="jumping_jacks">Jumping jacks</string>
+    <string name="straight_to_forearms">Straight to forarms position</string>
+    <string name="bridging">Bridging</string>
+    <string name="jumps_to_oh">Jumps to over head</string>
+    <string name="wobble">Wobble</string>
+    <string name="side_pos">Side position</string>
+    <string name="trunk_rotation">Trunk rotation</string>
+    <string name="situps">Situps</string>
+    <string name="arnold_dips">Arnold dips</string>
+    <string name="pullups">Pullups</string>
+    <string name="dumbbell_curls">Dumbbell curls</string>
+    <string name="palm_pressing">Palm pressing</string>
+    <string name="bench_press">Bench press</string>
+    <string name="flying">Flying</string>
+    <string name="shrugs">Shrugs</string>
+    <string name="forearm_rotations">Forearm rotations</string>
+    <!-- all tags -->
+    <string name="calves">Calves</string>
+    <string name="thighs">Thighs</string>
+    <string name="buttocks">Buttocks</string>
+    <string name="abs">Abs</string>
+    <string name="sideabs">Side abs</string>
+    <string name="breast">Breast</string>
+    <string name="shoulders">Shoulders</string>
+    <string name="back_tag">Back</string>
+    <string name="biceps">Biceps</string>
+    <string name="triceps">Triceps</string>
+    <string name="forearms">Forearms</string>
+    <string name="stamina">Stamina</string>
+    <string name="neck">Neck</string>
+    <!-- all notes -->
+    <string name="lean_on">Something to lean on</string>
+    <string name="pull_up">Something to pull you up</string>
+    <string name="dumbbell">Dumbbells</string>
+    <string name="longbell">Longbell</string>
+    <string name="bell">Dumbbells or Longbell</string>
+    <string name="you_need">You\&#39;ll need:</string>
+    <!-- all information -->
+    <string name="info_general">General information</string>
+    <string name="info_general_text">This application is supposed to support you with your personal training.
+        It provides the possibility to create many workouts after your own desires and helps you with the training.
+        About 20 to 30 minutes of exercising per day, or at least 3 times a week, are enough to get you in shape and
+        make you feel more fit and energetic.
+        &lt;br&gt;&lt;br&gt;If you want to slim down and to build muscles with your exercises I recommend a healthy
+        nutrition in addition. Most of all you should take care of eating much protein and diminish the supply of carbs and
+        sugar. So say \"Yes\" to meat, fish, eggs and vegetables and say \"No\" to all food that contains much sugar as well as
+        pasta, potatoes and wheat products. So for the time beeing there is no more bakery products and only rarely fruits.
+        Even though they are healthy they still contain fructose which would disturb your diet.
+        If you still don\&#39;t want to set your apple a day aside you can eat it right after your workout. This way you are
+        providing energy to your body and your body can make good use of the fructose.</string>
+    <string name="info_exercises">About the exercises</string>
+    <string name="info_exercises_text">The exercises of this application are mostly bodyweight exercises.
+        That means you can perform them without any aid or tools. You only need you own body.
+        That way you can train wherever you are whenever you want!&lt;br&gt;&lt;br&gt;In addition every exercise is linked to
+        several tags so you know what effect the exercise has to your body. These tags in general represent difrent muscle
+        groups. But they only tell you the crucial effect of one exercise. The enumeration of all muscles groups as well as
+        their official designation would exceed the purpose of this application and thus were explicitly not integrated
+        into this application.</string>
+    <string name="info_training">About the practice</string>
+    <string name="info_training_text">The supervised training has the purpose to keep you from having to remember all of your 
+        workouts. By exercising with your saved workouts the apllication is able to lead you through the whole practice and
+        you only have to press one button every now and then to get to your next exercise. This way it will be easier for
+        to get and stay motivated for exercising because the next practice is just one click apart.
+        &lt;br&gt;&lt;br&gt;&lt;b&gt;The warmup:&lt;/b&gt;&lt;br&gt;Right before every workout you should warm up properly.
+        About 5 to 10 minues of moving your body with an increasing intensity are enough to prevent yourself from getting
+        injured and to prepare your body for the upcoming practice.&lt;br&gt;&lt;br&gt;
+        &lt;b&gt;The cooldown:&lt;/b&gt;&lt;br&gt;Often underrated but yet neccessary. Cooling down should be a as much of a
+        part of your practice routine as the warming up. That is because it slowly calms your body down and prepares it for
+        the recovery phase. If you did exercises that mostly had an impact on your stamina it is important to stay in
+        more relaxed motion to slowly reduce your pulse. To prevent your muscles from hardening after training and to stay
+        agile relaxation and stretching exercises are also an important part of the cooldown phase.</string>
+    <string name="info_contact">Contact</string>
+    <string name="info_contact_text">If you want to report an error or if you have any questions or suggestions please write
+        an email to:
+        &lt;br&gt;&lt;br&gt;&lt;a href=\"mailto:contact@couchdev.net\"&gt;contact@couchdev.net&lt;/a&gt;
+        &lt;br&gt;&lt;br&gt;Your email address will be neither stored permanently nor used for commercial purposes or similar
+        things. Only the email you write will of course be stored so you can get an answer.</string>
+
+</resources>

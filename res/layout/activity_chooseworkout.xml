@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+	<Button 
+	    android:id="@+id/backButton"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/back_button"
+	    android:onClick="back" />
+    <TextView 
+        android:id="@+id/chooseSetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_workout"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/backButton"
+        android:layout_marginLeft="20dp"
+        style="@style/text_black_18" />
+	<Button 
+	    android:id="@+id/menuButton"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/menu_button"
+	    android:onClick="menu" />
+    <View 
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:layout_below="@+id/chooseSetText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <ListView 
+        android:id="@+id/workoutList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_above="@+id/lineBottom"
+        android:divider="@drawable/divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/item_selector"
+    	android:background="@color/light_grey" />
+    <View 
+        android:id="@+id/lineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+		android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_bottom"
+        android:layout_alignTop="@+id/workoutList" />
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_top"
+        android:layout_alignBottom="@+id/workoutList" />
+    
+    <TextView 
+		android:id="@+id/notAvailable"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@+id/workoutList"
+		android:layout_alignBottom="@+id/workoutList"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:gravity="center"
+		style="@style/text_black_20"
+		android:textColor="@color/grey_transparent"
+		android:text="@string/no_workouts_available" />
+    
+</RelativeLayout>

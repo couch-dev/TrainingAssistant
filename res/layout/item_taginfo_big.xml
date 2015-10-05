@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <View 
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+    
+    <View 
+        android:id="@+id/fullBar"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/center"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tagText" />
+    
+    <TextView 
+        android:id="@+id/tagText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/center"
+        style="@style/text_black_20" />
+    
+    <View 
+        android:id="@+id/intensityBar"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/fullBar"
+        android:layout_alignTop="@+id/fullBar"
+        android:layout_alignBottom="@+id/fullBar" />
+
+</RelativeLayout>

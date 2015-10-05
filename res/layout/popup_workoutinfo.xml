@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView 
+        android:id="@+id/tagsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="10dp"
+        android:divider="@color/transparent"
+        android:focusable="false" >        
+    </ListView>
+    
+    <View 
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+        
+    <TextView 
+        android:id="@+id/ratingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/star1"
+        android:layout_alignBottom="@+id/star1"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        style="@style/text_black_18"
+        android:textStyle="bold" />
+    <ImageView 
+        android:id="@+id/star1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tagsList"
+        android:layout_toRightOf="@+id/ratingText"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/star" />
+    <ImageView 
+        android:id="@+id/star2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/star1"
+        android:layout_alignTop="@+id/star1"
+        android:src="@drawable/star" />
+    <ImageView 
+        android:id="@+id/star3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/star2"
+        android:layout_alignTop="@+id/star1"
+        android:src="@drawable/star" />
+    <ImageView 
+        android:id="@+id/star4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/star3"
+        android:layout_alignTop="@+id/star1"
+        android:src="@drawable/star" />
+    <ImageView 
+        android:id="@+id/star5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/star4"
+        android:layout_alignTop="@+id/star1"
+        android:src="@drawable/star" />
+
+</RelativeLayout>

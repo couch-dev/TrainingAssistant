@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trainingSetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_selector" >
+
+    <TextView 
+        android:id="@+id/trainingSetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/deleteSet"
+        style="@style/text_black_20" />
+    
+    <ImageButton 
+        android:id="@+id/deleteSet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/delete"
+        android:background="@drawable/bg_red"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

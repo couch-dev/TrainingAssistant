@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+	<Button 
+	    android:id="@+id/backButton"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/back_button"
+	    android:onClick="back" />
+    <TextView 
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_exercises"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/backButton"
+        android:layout_marginLeft="20dp"
+        style="@style/text_black_18" />
+    <View 
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+    
+    <ScrollView 
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_above="@+id/saveSet"
+    android:background="@color/light_grey" >
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+		    <ListView 
+		        android:id="@+id/selectedList"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:divider="@color/grey_transparent"
+		        android:dividerHeight="3dp" />
+		    
+		    <ListView 
+		        android:id="@+id/exercisesList"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/selectedList"
+		        android:divider="@drawable/divider"
+		        android:dividerHeight="1dp"
+		        android:listSelector="@drawable/item_selector" />
+        </RelativeLayout>
+    </ScrollView>
+    
+    <View 
+        android:id="@+id/lineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:layout_below="@+id/scrollView"
+        android:layout_centerHorizontal="true" />
+    
+    <Button 
+        android:id="@+id/saveSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save"
+        android:onClick="saveSet"
+        android:background="@drawable/button_selector"
+        style="@style/text_white_bold_18"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
+    
+    <TextView 
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/set_name"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignBaseline="@+id/saveSet"
+        style="@style/text_black_18" />
+    
+    <EditText
+        android:id="@+id/setName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nameText"
+        android:layout_toLeftOf="@+id/saveSet"
+        android:layout_marginRight="10dp"
+        android:inputType="textAutoComplete"
+        android:hint="@string/set_name_hint"
+        android:layout_alignBaseline="@+id/nameText"
+        style="@style/text_black_18" />
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_top"
+        android:layout_alignBottom="@+id/scrollView" />
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/scrollView"
+        android:background="@drawable/shadow_bottom" />
+    
+</RelativeLayout>

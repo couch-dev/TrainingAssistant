@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="crash_dialog_title">TrainAssist ist abgeschmiert :(</string>
+	<string name="crash_dialog_text">Drücke OK um den Fehlerbericht per E-mail an mich zu senden.</string>
+	<string name="crash_dialog_comment_prompt">Du kannst auch ein Kommentar zum Problem hinzufügen:</string>
+	<string name="crash_dialog_ok_toast">Dankeschön!</string>
+	
+    <string name="app_name">TrainAssist</string>
+    <string name="workouts">Workouts</string>
+    <string name="start_training">Training starten!</string>
+    <string name="new_workout">Workout erstellen</string>
+    <string name="from_exercises">Aus Übungen</string>
+    <string name="from_effect">Aus Wirkung</string>
+    <string name="set_name">Name:</string>
+    <string name="set_name_hint">Mein Workout</string>
+    <string name="number">-1</string>
+    <string name="save">Speichern</string>
+    <string name="saved">Gespeichert</string>
+    <string name="error_saving">Fehler beim speichern</string>
+    <string name="choose_workout">Wähle ein Workout</string>
+    <string name="choose_exercises">Wähle die Übungen</string>
+    <string name="training_properties">Training Einstellungen</string>
+    <string name="start">Starten!</string>
+    <string name="set_training">Satz</string>
+    <string name="interval_training">Intervall</string>
+    <string name="training">Training</string>
+    <string name="workout">Workout</string>
+    <string name="pause">Pause</string>
+    <string name="seconds">Sekunden</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="accept">Übernehmen</string>
+    <string name="repeats">Wiederholungen</string>
+    <string name="time">Zeit</string>
+    <string name="times">mal</string>
+    <string name="secs">sek.</string>
+    <string name="delete_workout">Workout löschen</string>
+    <string name="delete">Löschen</string>
+    <string name="next">Weiter</string>
+    <string name="done">Fertig</string>
+    <string name="back">Zurück</string>
+    <string name="action_time">00:00</string>
+    <string name="warmup">Warmup!</string>
+    <string name="cooldown">Cooldown!</string>
+    <string name="iterations">Durchgänge</string>
+    <string name="up_next">gleich</string>
+    <string name="statistics">Statistik</string>
+    <string name="apply_settings">Einstellung vornehmen</string>
+    <string name="your_week">Deine Woche</string>
+    <string name="your_favourite_exercise">Deine Lieblingsübung</string>
+    <string name="again_toworrow">Morgen wieder?</string>
+    <string name="check_workouts_howto">Lange drücken, um ein Workout abzuhaken.</string>
+    <string name="this_exercise_trains">Mit dieser Übung trainierst du:</string>
+    <string name="close">Schließen</string>
+    <string name="create_workout">Wie möchtest du dein Workout erstellen?</string>
+    <string name="set_effect">Lege die Wirkung fest</string>
+    <string name="generate">Generieren</string>
+    <string name="intensity">Intensität</string>
+    <string name="dont_forget_name">Bitte gib dem Workout einen Namen!</string>
+    <string name="must_not_be_empty">Du musst mindestens eine Übung auswählen!</string>
+    <string name="too_few_tags">Bitte wähle noch mehr aus!</string>
+    <string name="and">und</string>
+    <string name="all_of_em">Alles!</string>
+    <string name="and_more">und mehr</string>
+    <string name="workouts_per_week">Workouts pro Woche</string>
+    <string name="favorite_is">Deine Lieblingsübung ist</string>
+    <string name="favorites_are">Deine Lieblingsübungen sind</string>
+    <string name="try_one_of_these">Probier doch mal eine der folgenden Übungen</string>
+    <string name="overall_rating">Durchschnittliches Training</string>
+    <string name="starting_in">startet in</string>
+    <string name="really_delete_workout">Möchtest du folgendes Workout wirklich löschen</string>
+    <string name="rating">Bewertung</string>
+    <string name="about">Über</string>
+    <string name="about_title">Erfahre mehr</string>
+    <string name="theme_color">Farbthema</string>
+    <string name="training_stats">Training Statistik:</string>
+    <string name="radio_4">4</string>
+    <string name="radio_5">5</string>
+    <string name="radio_6">6</string>
+    <string name="radio_auto">auto</string>
+    <string name="num_exercises">Anzahl Übungen</string>
+    <string name="no_statistics_available">Es ist noch keine Statistik verfügbar.</string>
+    <string name="no_workouts_created">Es wurden noch keine Workouts erstellt.</string>
+    <string name="no_workouts_available">Es sind noch keine Workouts verfügbar.</string>
+    <!-- all exercises -->
+    <string name="burpees">Burpees</string>
+    <string name="oh_pushups">Over Head Pushups</string>
+    <string name="swimmer">Schwimmer</string>
+    <string name="downhill_pos">Abfahrtshocke</string>
+    <string name="straight_arms_pos">Langarmstütz</string>
+    <string name="longstep_squats">Ausfallschrittkniebeugen</string>
+    <string name="pushups">Pushups</string>
+    <string name="bug">Käfer</string>
+    <string name="cruches">Crunches</string>
+    <string name="squats">Kniebeugen</string>
+    <string name="fast_squats">Schnelle Kniebeugen</string>
+    <string name="skippings">Skippings</string>
+    <string name="bat">Fledermaus</string>
+    <string name="squat_jumps">Squat Jumps</string>
+    <string name="climbers">Climbers</string>
+    <string name="alternating_jumps">Kurze Wechselsprünge</string>
+    <string name="jumping_jacks">Jumping Jacks</string>
+    <string name="straight_to_forearms">Langarm- in Unterarmstütz</string>
+    <string name="bridging">Bridging</string>
+    <string name="jumps_to_oh">Jumps to Over Head</string>
+    <string name="wobble">Schunkeln</string>
+    <string name="side_pos">Seitstütz</string>
+    <string name="trunk_rotation">Rumpfrotation</string>
+    <string name="situps">Situps</string>
+    <string name="arnold_dips">Arnold-Dips</string>
+    <string name="pullups">Klimmzüge</string>
+    <string name="dumbbell_curls">Kuzhantel Curls</string>
+    <string name="palm_pressing">Handflächendrücken</string>
+    <string name="bench_press">Bankdrücken</string>
+    <string name="flying">Fliegende</string>
+    <string name="shrugs">Schulterzucken</string>
+    <string name="forearm_rotations">Unterarmdrehen</string>
+    <!-- all tags -->
+    <string name="calves">Waden</string>
+    <string name="thighs">Oberschenkel</string>
+    <string name="buttocks">Gesäß</string>
+    <string name="abs">Bauchmuskeln</string>
+    <string name="sideabs">Seitliche Bauchmuskeln</string>
+    <string name="breast">Brust</string>
+    <string name="shoulders">Schultern</string>
+    <string name="back_tag">Rücken</string>
+    <string name="biceps">Bizeps</string>
+    <string name="triceps">Trizeps</string>
+    <string name="forearms">Unterarme</string>
+    <string name="stamina">Ausdauer</string>
+    <string name="neck">Nacken</string>
+    <!-- all notes -->
+    <string name="lean_on">Etwas zum Abstützen</string>
+    <string name="pull_up">Etwas zum Hochziehen</string>
+    <string name="dumbbell">Kurzhanteln</string>
+    <string name="longbell">Langhantel</string>
+    <string name="bell">Kurzhanteln oder Langhantel</string>
+    <string name="you_need">Benötigt:</string>
+    <!-- all arrays -->
+    <string-array name="praiseArray">
+        <item>Sehr Schön!</item>
+        <item>Nice!</item>
+        <item>Schick!</item>
+        <item>Sehr nice!</item>
+        <item>Awesome!</item>
+        <item>Sauber!</item>
+        <item>Super!</item>
+        <item>Toll!</item>
+    </string-array>
+    <string-array name="statisticsMenu">
+        <item>Statistik dieser Woche zurücksetzen</item>
+        <item>Gesamte Statistik zurücksetzen</item>
+    </string-array>
+    <string-array name="workoutsMenu">
+        <item>Workouts automatisch abhaken</item>
+        <item>Workouts selbst abhaken</item>
+    </string-array>
+    <string-array name="mainMenu">
+        <item>volume</item>
+        <item>theme color</item>
+    </string-array>
+    <!-- all information -->
+    <string name="info_general">Allgemeine Informationen</string>
+    <string name="info_general_text">Diese App soll Dich bei deinem persönlichen Trainingsprogramm unterstützen.
+        Sie bietet Dir die Möglichkeit nach Belieben verschiedene Workouts zu erstellen und mit dessen Hilfe zu trainieren.
+        Schon etwa 20 bis 30 Minuten Training pro Tag, oder zumindest 3 Mal die Woche, reichen aus um Dich schnell in Form
+        zu bringen und fitter zu fühlen.
+        &lt;br&gt;&lt;br&gt;Willst Du mit Deinem Training abnehmen und Muskeln aufbauen, empfehle ich Dir zusätzlich eine
+        gesunde Ernährung. Dabei solltest Du vor Allem darauf achten viele Proteine und möglichst keine Kohlenhydrate und
+        keinen Zucker zu Dir zu nehmen. Das bedeutet \"Ja\" zu Fleisch, Fisch, Eiern und Gemüse und \"Nein\" zu allem was viel
+        Zucker enthält, sowie zu Nudeln, Kartoffeln und Weizenprodukten. Also gibt es vorerst kein Gebäck mehr und auch nur
+        selten Obst. Denn es ist zwar gesund, aber dennoch enthält Obst Fruchtzucker, der die Wirkung der Diät beinträchtigt.
+        Willst Du trotzdem nicht auf deinen täglichen Apfel verzichten, iss ihn direkt nach dem Training. Dann versorgt er
+        den Körper mit Energie und kann gut verwertet werden.</string>
+    <string name="info_exercises">Über die Übungen</string>
+    <string name="info_exercises_text">Die Übungen, die Du in dieser App findest, sind zum größten Teil Bodyweight Übungen.
+        Das bedeutet, Du kannst sie ohne jegliche Hilfsmittel nur mit Deinem eigenen Körper durchführen.
+        Dadurch kannst Du immer und überall trainieren!&lt;br&gt;&lt;br&gt;Außerdem wird jede Übung mehreren sogenannten
+        &lt;i&gt;Tags&lt;/i&gt; zugeordnet, damit Du weißt, welche Wirkung die Übung auf Deinen Körper hat. Sie beschreiben
+        vor Allem verschiedene Muskelgruppen. Die Tags zeigen Dir nur welche hauptsächliche Wirkung eine Übung hat.
+        Das Auflisten aller Muskelgruppen sowie ihre korrekten Bezeichnungen würde den Zweck dieser App überschreiten und
+        wurden daher bewusst nicht in die App integriert.</string>
+    <string name="info_training">Über das Training</string>
+    <string name="info_training_text">Das leitende Training soll Dir die Arbeit abnehmen, Dich an alle deine Workouts zu 
+        erinnern. In dem Du mit den gespeicherten Workouts trainierst, kann Dich die App durch das ganze Training führen
+        und Du musst lediglich ab und zu einen Knopf drücken um zur nächsten Übung zu gelangen. Damit soll es Dir leichter
+        fallen Dich für das Training zu motivieren, denn ab jetzt ist Dein Training nur noch einen Klick entfernt.
+        &lt;br&gt;&lt;br&gt;&lt;b&gt;Das Warmup:&lt;/b&gt;&lt;br&gt;Vor jedem Workout solltest Du Dich anständig aufwärmen.
+        Etwa 5 bis 10 Minuten an Bewegung mit steigernder Intensität sind ausreichend um Verletzungen vorzubeugen und Deinen
+        Körper auf das bevorstehende Training vorzubereiten.&lt;br&gt;&lt;br&gt;
+        &lt;b&gt;Das Cooldown:&lt;/b&gt;&lt;br&gt;Oft wird es unterschätzt, aber das Cooldown sollte genau so
+        selbstverständlich zu Deiner Trainingsroutine gehören wie das Warmup. Denn es fährt den Körper langsam wieder runter
+        und bereitet ihn auf die Erholungsphase vor. Hast Du viel Ausdauersport gemacht ist es wichtig Dich anschließend
+        weiter locker zu bewegen um den Puls langsam zu senken. Um zu verhindern, dass sich die Muskeln nach dem Training
+        verhärten und man beweglich bleibt sind Entspannungs- und Dehnübungen auch ein wichtiger Bestandteil der Cooldown
+        Phase.</string>
+    <string name="info_contact">Kontakt</string>
+    <string name="info_contact_text">Wenn Du einen Fehler in der App findest sowie bei allgemeinen Fragen und Anmerkungen
+        schreib doch einfach eine E-Mail an:
+        &lt;br&gt;&lt;br&gt;&lt;a href=\"mailto:contact@couchdev.net\"&gt;contact@couchdev.net&lt;/a&gt;
+        &lt;br&gt;&lt;br&gt;Deine E-Mail Adresse wird weder permanent gespeichert, noch für Werbezwecke oder Ähnliches
+        verwendet. Es wird lediglich die E-Mail an sich gespeichert, um Dir selbstverständlich auch antworten zu
+        können.</string>
+    
+
+</resources>

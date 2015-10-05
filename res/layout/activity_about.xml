@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+	<Button 
+	    android:id="@+id/backButton"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/back_button"
+	    android:onClick="back" />
+    <TextView 
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_title"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/backButton"
+        android:layout_marginLeft="20dp"
+        style="@style/text_black_18" />
+    <View 
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+    
+    <View
+        android:id="@+id/leftImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/left_image" />
+    
+    <View
+        android:id="@+id/rightImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/right_image" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/aboutPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exerciseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView 
+        android:id="@+id/exerciseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        style="@style/text_black_20" />
+    
+    <TextView 
+        android:id="@+id/exercisePosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_toLeftOf="@+id/infoButton"
+        android:layout_marginRight="10dp"
+        android:text="@string/number"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/exerciseName"
+        style="@style/text_black_20" />
+    
+    <Button 
+        android:id="@+id/infoButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/info_button" />
+
+</RelativeLayout>

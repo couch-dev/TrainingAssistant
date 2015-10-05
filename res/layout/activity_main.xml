@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+	<Button 
+	    android:id="@+id/settingsButton"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/settings_button"
+	    android:onClick="settings" />
+	
+	<View 
+	    android:id="@+id/center"
+	    android:layout_width="0dp"
+	    android:layout_height="0dp"
+	    android:layout_centerInParent="true" />
+    
+    <Button 
+        android:id="@+id/statsButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="@string/statistics"
+        android:onClick="showStatistics"
+        android:background="@drawable/white_button_selector"
+        style="@style/text_white_bold_20"
+        android:layout_toRightOf="@+id/center"
+        android:layout_below="@+id/settingsButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp" />
+    
+    <Button 
+        android:id="@+id/aboutButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="@string/about"
+        android:onClick="about"
+        android:background="@drawable/white_button_selector"
+        style="@style/text_white_bold_20"
+        android:layout_toLeftOf="@+id/center"
+ 		android:layout_alignTop="@+id/statsButton"
+ 		android:layout_marginRight="15dp" />
+    
+    <Button 
+        android:id="@+id/workoutsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text="@string/workouts"
+        android:onClick="trainingSets"
+        android:background="@drawable/white_button_selector"
+        style="@style/text_white_bold_20"
+        android:layout_below="@+id/statsButton"
+        android:layout_alignRight="@+id/statsButton"
+        android:layout_alignLeft="@+id/aboutButton"
+        android:layout_marginTop="30dp" />
+    
+    <Button 
+        android:id="@+id/startTrainingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="@string/start_training"
+        android:onClick="startTraining"
+        android:background="@drawable/white_button_selector"
+        style="@style/text_white_bold_20"
+        android:layout_below="@+id/workoutsButton"
+        android:layout_alignLeft="@+id/workoutsButton"
+        android:layout_alignRight="@+id/workoutsButton"
+        android:layout_marginTop="100dp" />
+
+</RelativeLayout>

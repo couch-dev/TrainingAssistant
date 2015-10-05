@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+	<Button 
+	    android:id="@+id/backButton"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/back_button"
+	    android:onClick="back" />
+    <TextView 
+        android:id="@+id/propertiesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/training_properties"
+        android:onClick="chooseExercises"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/backButton"
+        android:layout_marginLeft="20dp"
+        style="@style/text_black_18" />
+    <View 
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:layout_below="@+id/propertiesText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <NumberPicker 
+        android:id="@+id/numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/text"
+        android:layout_marginTop="10dp" />
+    <TextView 
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/numberPicker"
+        android:layout_alignBottom="@+id/numberPicker"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="40dp"
+        android:text="@string/iterations"
+        style="@style/text_black_18" />
+    
+    <NumberPicker 
+        android:id="@+id/numberPicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/numberPicker"
+        android:layout_below="@+id/numberPicker"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+    <TextView 
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/numberPicker2"
+        android:layout_alignBottom="@+id/numberPicker2"
+        android:layout_toLeftOf="@+id/numberPicker2"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="40dp"
+        android:text="@string/pause"
+        style="@style/text_black_18" />
+    <TextView 
+        android:id="@+id/textSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/numberPicker2"
+        android:layout_alignBottom="@+id/numberPicker2"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/numberPicker2"
+        android:layout_marginLeft="20dp"
+        android:text="@string/seconds"
+        style="@style/text_black_18" />
+    
+    <Button 
+        android:id="@+id/startButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/done"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:onClick="done"
+        android:background="@drawable/button_selector"
+        style="@style/text_white_bold_18" />
+    
+    <Button 
+        android:id="@+id/backPropButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:onClick="back"
+        android:background="@drawable/button_selector"
+        style="@style/text_white_bold_18" />
+    
+</RelativeLayout>

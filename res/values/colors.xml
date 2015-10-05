@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="white">#ffffff</color>
+    <color name="orange">#ee7700</color>
+    <color name="red">#dd0000</color>
+    <color name="dark_red">#990000</color>
+    <color name="black">#000000</color>
+    <color name="cyan">#00bbdd</color>
+    <color name="green">#00bb55</color>
+    <color name="theme">@color/dark_green</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="grey">#999999</color>
+    <color name="grey_transparent">#99999999</color>
+    <color name="blue">#144be1</color>
+    <color name="purple">#e327d2</color>
+    <color name="violet">#7a00a5</color>
+    <color name="yellow">#ffdb00</color>
+    <color name="dark_green">#00726f</color>
+    <color name="mint">#73e5ba</color>
+    <color name="dark_blue">#002998</color>
+    <color name="brown">#633700</color>
+    <color name="gold">#ffd85f</color>
+    <color name="light_grey">#f5f7f9</color>
+    
+</resources>
