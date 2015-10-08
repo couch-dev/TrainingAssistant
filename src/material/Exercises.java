@@ -107,7 +107,7 @@ public enum Exercises {
 		if(ex.equals(WECHSELSPRUENGE.getString(context)) || ex.equals(SKIPPINGS.getString(context))){
 			tags.add(Tags.CALVES.getString(context));
 		}
-		if(ex.equals(CLIMBERS.getString(context)) || ex.equals(SQUAT_JUMPS.getString(context)) || ex.equals(SCHNELLE_KNIEBEUGEN.getString(context))
+		if(ex.equals(BURPEES.getString(context)) || ex.equals(SQUAT_JUMPS.getString(context)) || ex.equals(SCHNELLE_KNIEBEUGEN.getString(context))
 				|| ex.equals(KNIEBEUGEN.getString(context)) || ex.equals(AS_KNIEBEUGEN.getString(context))
 				|| ex.equals(ABFAHRTSHOCKE.getString(context))){
 			tags.add(Tags.THIGHS.getString(context));
