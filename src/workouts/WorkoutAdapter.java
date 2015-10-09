@@ -2,8 +2,11 @@ package workouts;
 
 import java.util.List;
 
+import material.Colors;
 import material.Workout;
 import android.content.Context;
+import android.graphics.PorterDuff.Mode;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -43,6 +46,9 @@ public class WorkoutAdapter extends ArrayAdapter<Workout> implements OnClickList
 		TextView name =  (TextView) view.findViewById(R.id.trainingSetName);
 		name.setText(sets.get(position).getName());
 		ImageButton delete = (ImageButton) view.findViewById(R.id.deleteSet);
+		Drawable img = getContext().getResources().getDrawable(R.drawable.white_button_selector);
+        img.setColorFilter(Colors.darken(Colors.getThemeColor()), Mode.MULTIPLY);
+        delete.setBackground(img);
 		delete.setOnClickListener(this);
 		RelativeLayout rl = (RelativeLayout) view.findViewById(R.id.trainingSetLayout);
 		rl.setOnClickListener(this);

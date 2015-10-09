@@ -5,10 +5,16 @@ import java.util.ArrayList;
 import material.Colors;
 import material.Exercise;
 import android.content.Context;
+import android.graphics.PorterDuff.Mode;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import de.couchdev.trainingassistant.R;
 
@@ -17,13 +23,13 @@ import de.couchdev.trainingassistant.R;
  * @author Tim Reimer
  *
  */
-public class SimpleExerciseAdapter extends ArrayAdapter<Exercise> {
+public class ExerciseAdapter extends ArrayAdapter<Exercise> implements OnTouchListener {
 
 	private int resource;
 	private ArrayList<Exercise> sets;
 	private int newPosition;
 
-	public SimpleExerciseAdapter(Context context, int resource, ArrayList<Exercise> objects) {
+	public ExerciseAdapter(Context context, int resource, ArrayList<Exercise> objects) {
 		super(context, resource, objects);
 		this.resource = resource;
 		sets = objects;
@@ -38,11 +44,18 @@ public class SimpleExerciseAdapter extends ArrayAdapter<Exercise> {
 			view = li.inflate(resource, null);
 		}
 		TextView name =  (TextView) view.findViewById(R.id.trainingSetName);
+		View image = view.findViewById(R.id.changePosView);
+		image.setOnTouchListener(this);
 		if(position == newPosition){
 			name.setText("");
+			image.setVisibility(View.GONE);
 			view.setBackgroundColor(Colors.getThemeColor());
 		} else{
 			name.setText(sets.get(position).getName());
+			Drawable img = getContext().getResources().getDrawable(R.drawable.change_pos);
+	        img.setColorFilter(Colors.darken(Colors.getThemeColor()), Mode.MULTIPLY);
+	        image.setBackground(img);
+			image.setVisibility(View.VISIBLE);
 			view.setBackgroundResource(R.color.transparent);
 		}
 		return view;
@@ -76,6 +89,25 @@ public class SimpleExerciseAdapter extends ArrayAdapter<Exercise> {
 		newPosition = -1;
 		notifyDataSetChanged();
 		return sets;
+	}
+
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		switch (event.getAction() & MotionEvent.ACTION_MASK) {
+        case MotionEvent.ACTION_DOWN:
+    		RelativeLayout layout = (RelativeLayout) v.getParent();
+    		ListView lv = (ListView) layout.getParent();
+    		int pos = -1;
+    		for(int i=0; i < lv.getChildCount(); i++){
+    			if(lv.getChildAt(i) == layout){
+    				pos = i;
+    				break;
+    			}
+    		}
+    		((Properties1Activity) getContext()).initiateItemDrag(layout, pos);
+            break;
+		}
+		return false;
 	}
 
 }

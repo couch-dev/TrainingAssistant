@@ -3,7 +3,6 @@ package workouts;
 import general.BackButtonActivity;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import main.SavingManager;
 import material.Colors;

@@ -17,7 +17,6 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -31,7 +30,7 @@ import de.couchdev.trainingassistant.R;
  * @author Tim Reimer
  *
  */
-public class Properties1Activity extends BackButtonActivity implements OnItemClickListener, OnItemLongClickListener, OnTouchListener {
+public class Properties1Activity extends BackButtonActivity implements OnItemClickListener, OnTouchListener {
 
 	public static final String EXERCISE = "exercise";
 	private Workout set;
@@ -41,14 +40,14 @@ public class Properties1Activity extends BackButtonActivity implements OnItemCli
 	private ArrayList<Workout> workouts;
 	private SavingManager mngr;
 	private int pos;
-	private int _yDelta;
-	private SimpleExerciseAdapter adapter;
+	private ExerciseAdapter adapter;
 	private RelativeLayout itemLayout;
 	private boolean dragStarted;
 	private Exercise draggedItem;
 	private int draggedItemPos;
 	private int initialMargin;
 	private int oldPos;
+	private int _yDelta;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -62,10 +61,9 @@ public class Properties1Activity extends BackButtonActivity implements OnItemCli
     	pos = getIntent().getIntExtra(ChooseWorkoutActivity.POSITION, -1);
     	set = workouts.get(pos);
     	ListView lv = (ListView) findViewById(R.id.setList);
-    	adapter = new SimpleExerciseAdapter(this, R.layout.item_trainingset_simple, set.getExercises());
+    	adapter = new ExerciseAdapter(this, R.layout.item_exercise_changepos, set.getExercises());
     	lv.setAdapter(adapter);
     	lv.setOnItemClickListener(this);
-    	lv.setOnItemLongClickListener(this);
     	lv.setOnTouchListener(this);
     	setButton = (Button) findViewById(R.id.setTrainingButton);
     	intervalButton = (Button) findViewById(R.id.intervalTrainingButton);
@@ -179,13 +177,12 @@ public class Properties1Activity extends BackButtonActivity implements OnItemCli
 		mngr.saveWorkouts(workouts);
 	}
 	
-	@Override
-	public void onItemClick(AdapterView<?> parent, View view, int position,	long id) {
-		new ExercisePropertiesPopup(this, position, set.getExercises().get(position));
-	}
-
-	@Override
-	public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+	/**
+	 * Initiates the dragging of one exercise its image for this purpose was pressed.
+	 * @param view The layout that belongs to the exercise that should be dragged.
+	 * @param position The position of the <b>view</b> in the parent ListView.
+	 */
+	public void initiateItemDrag(View view, int position) {
 		LayoutParams params = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 		int[] location = new int[]{0,0};
 		view.getLocationOnScreen(location);
@@ -200,7 +197,11 @@ public class Properties1Activity extends BackButtonActivity implements OnItemCli
     	RelativeLayout root = (RelativeLayout) findViewById(R.id.rootLayout);
 		root.addView(itemLayout);
 		adapter.dragStarted(position);
-		return true;
+	}
+	
+	@Override
+	public void onItemClick(AdapterView<?> parent, View view, int position,	long id) {
+		new ExercisePropertiesPopup(this, position, set.getExercises().get(position));
 	}
 
 	@Override
@@ -251,5 +252,4 @@ public class Properties1Activity extends BackButtonActivity implements OnItemCli
 		}
 	    return false;
 	}
-
 }
