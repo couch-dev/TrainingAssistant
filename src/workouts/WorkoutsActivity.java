@@ -3,6 +3,7 @@ package workouts;
 import general.BackButtonActivity;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import main.SavingManager;
 import material.Colors;
@@ -118,9 +119,14 @@ public class WorkoutsActivity extends BackButtonActivity {
 	        		Workout old = new Workout();
 	        		old.setName(oldName);
         			workouts.set(workouts.indexOf(old), set);
+        			mngr.updateWorkoutStats(oldName, name);
 	        	}
 	        	adapter.notifyDataSetChanged();
 	    		mngr.saveWorkouts(workouts);
+    			if(mngr.getWeekWorkouts().contains(oldName)){
+    				mngr.checkWorkout(oldName);
+    				mngr.checkWorkout(name);
+    			}
 	        }
 	    }
 	}

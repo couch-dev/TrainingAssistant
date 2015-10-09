@@ -533,7 +533,7 @@ public class SavingManager {
 	}
 	
 	/**
-	 * Get a mapping of workouts and their time being trained.
+	 * Get a mapping of workouts and their times being trained.
 	 * @return A {@code HashMap} of names of workouts and the corresponding number of how often each workout was trained.
 	 */
 	public HashMap<String, Integer> getWorkoutStats(){
@@ -548,6 +548,20 @@ public class SavingManager {
 		loadStatistics();
 		workoutStats.put(name, 0);
 		workoutStats.remove(name);
+		saveStatistics();
+	}
+	
+	/**
+	 * Removes the times trained of the workout with <b>oldName</b> and maps them to the workout with <b>newName</b>.
+	 * @param oldName The old name of the workout to remove from the list of trained workouts.
+	 * @param newName The new name of the workout.
+	 */
+	public void updateWorkoutStats(String oldName, String newName){
+		loadStatistics();
+		int num = workoutStats.get(oldName);
+		workoutStats.put(oldName, 0);
+		workoutStats.remove(oldName);
+		workoutStats.put(newName, num);
 		saveStatistics();
 	}
 	
