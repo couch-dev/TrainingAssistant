@@ -110,6 +110,8 @@ public class WorkoutsActivity extends BackButtonActivity {
 	        	Workout set = (Workout) data.getSerializableExtra(SET);
 	        	String oldName = data.getStringExtra(ChooseExercisesActivity.NAME);
 	        	String name = set.getName();
+	        	if(oldName == null || name == null)
+	        		throw new NullPointerException("oldName = "+oldName+", name = "+name);
 	        	if(name.equals(oldName)){
         			workouts.set(workouts.indexOf(set), set);
 	        	}else{

@@ -558,11 +558,13 @@ public class SavingManager {
 	 */
 	public void updateWorkoutStats(String oldName, String newName){
 		loadStatistics();
-		int num = workoutStats.get(oldName);
-		workoutStats.put(oldName, 0);
-		workoutStats.remove(oldName);
-		workoutStats.put(newName, num);
-		saveStatistics();
+		if(workoutStats.containsKey(oldName)){
+			int num = workoutStats.get(oldName);
+			workoutStats.put(oldName, 0);
+			workoutStats.remove(oldName);
+			workoutStats.put(newName, num);
+			saveStatistics();
+		}
 	}
 	
 }
