@@ -65,16 +65,20 @@
         style="@style/text_black_36"
         android:visibility="gone" />
     
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_above="@+id/button"
+        android:background="@drawable/shadow_top" />
     <Button 
         android:id="@+id/button"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
         android:text="@string/app_name"
         android:onClick="action"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/button_selector"
+        android:background="@drawable/training_button_selector"
         style="@style/text_white_bold_24" />
 
 </RelativeLayout>

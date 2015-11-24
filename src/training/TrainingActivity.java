@@ -116,7 +116,7 @@ public class TrainingActivity extends BackButtonActivity{
 
 		// apply theme color
         Button button = (Button) findViewById(R.id.button);
-        Drawable image = getResources().getDrawable(R.drawable.white_button_selector);
+        Drawable image = getResources().getDrawable(R.drawable.training_button_selector);
         image.setColorFilter(Colors.getThemeColor(), Mode.MULTIPLY);
         button.setBackground(image);
         
