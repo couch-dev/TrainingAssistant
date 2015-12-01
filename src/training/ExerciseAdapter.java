@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import de.couchdev.trainingassistant.R;
@@ -26,13 +25,13 @@ import de.couchdev.trainingassistant.R;
 public class ExerciseAdapter extends ArrayAdapter<Exercise> implements OnTouchListener {
 
 	private int resource;
-	private ArrayList<Exercise> sets;
+	private ArrayList<Exercise> set;
 	private int newPosition;
 
 	public ExerciseAdapter(Context context, int resource, ArrayList<Exercise> objects) {
 		super(context, resource, objects);
 		this.resource = resource;
-		sets = objects;
+		set = objects;
 		newPosition = -1;
 	}
 
@@ -51,7 +50,7 @@ public class ExerciseAdapter extends ArrayAdapter<Exercise> implements OnTouchLi
 			image.setVisibility(View.GONE);
 			view.setBackgroundColor(Colors.getThemeColor());
 		} else{
-			name.setText(sets.get(position).getName());
+			name.setText(set.get(position).getName());
 			Drawable img = getContext().getResources().getDrawable(R.drawable.change_pos);
 	        img.setColorFilter(Colors.darken(Colors.getThemeColor()), Mode.MULTIPLY);
 	        image.setBackground(img);
@@ -67,7 +66,7 @@ public class ExerciseAdapter extends ArrayAdapter<Exercise> implements OnTouchLi
 	 * @param exercise The item to add at <b>location</b>.
 	 */
 	public void add(int location, Exercise exercise) {
-		sets.add(location, exercise);
+		set.add(location, exercise);
 		newPosition = location;
 		notifyDataSetChanged();
 	}
@@ -88,7 +87,7 @@ public class ExerciseAdapter extends ArrayAdapter<Exercise> implements OnTouchLi
 	public ArrayList<Exercise> dragEnded(){
 		newPosition = -1;
 		notifyDataSetChanged();
-		return sets;
+		return set;
 	}
 
 	@Override
@@ -96,10 +95,11 @@ public class ExerciseAdapter extends ArrayAdapter<Exercise> implements OnTouchLi
 		switch (event.getAction() & MotionEvent.ACTION_MASK) {
         case MotionEvent.ACTION_DOWN:
     		RelativeLayout layout = (RelativeLayout) v.getParent();
-    		ListView lv = (ListView) layout.getParent();
+    		TextView tv = (TextView) layout.getChildAt(0);
+    		String name = tv.getText().toString();
     		int pos = -1;
-    		for(int i=0; i < lv.getChildCount(); i++){
-    			if(lv.getChildAt(i) == layout){
+    		for(int i=0; i < getCount(); i++){
+    			if(set.get(i).getName().equals(name)){
     				pos = i;
     				break;
     			}
