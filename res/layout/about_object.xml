@@ -24,7 +24,8 @@
 	      android:layout_marginTop="20dp"
 	      android:layout_marginLeft="30dp"
 	      android:layout_marginRight="30dp"
-        android:layout_marginBottom="20dp"
+          android:layout_marginBottom="20dp"
+          android:textColorLink="@color/orange"
 	      style="@style/text_black_18" />
 	  
     </RelativeLayout>

@@ -52,7 +52,7 @@
     
     <Button 
         android:id="@+id/generateButton"
-        android:layout_width="100dp"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button_selector"
         android:onClick="generate"

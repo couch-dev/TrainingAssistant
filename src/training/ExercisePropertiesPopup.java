@@ -3,6 +3,7 @@ package training;
 import material.Colors;
 import material.Exercise;
 import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.PorterDuff.Mode;
@@ -24,12 +25,12 @@ public class ExercisePropertiesPopup extends AlertDialog implements android.view
 
 	private int position;
 	private Exercise exercise;
-	private Context context;
 	private Button repeatsButton;
 	private Button timeButton;
 	private boolean time;
 	private NumberPicker numPicker;
 	private TextView secondsText;
+	private Context context;
 
 	public ExercisePropertiesPopup(Context context, int position, Exercise exercise) {
 		super(context);
@@ -41,9 +42,9 @@ public class ExercisePropertiesPopup extends AlertDialog implements android.view
 	
 	private void build(){      
         final Properties1Activity activity = (Properties1Activity) context;
-        
-        Builder builder = new Builder(context);
-        View view = LayoutInflater.from(context).inflate(R.layout.popup_exerciseproperties, null);
+
+        Builder builder = new Builder(getContext(), R.style.ThemeDialog);
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.popup_exerciseproperties, null);
         repeatsButton = (Button) view.findViewById(R.id.switchRepeats);
         timeButton = (Button) view.findViewById(R.id.switchTime);
         repeatsButton.setOnClickListener(this);

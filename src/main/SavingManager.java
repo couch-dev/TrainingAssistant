@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
+import material.Colors;
 import material.Exercise;
 import material.Workout;
 import android.content.Context;
@@ -520,6 +521,7 @@ public class SavingManager {
 	public void setThemeColor(int color){
 		loadSettings();
 		themeColor = color;
+		Colors.setThemeColor(Colors.getColorPosition(color));
 		saveSettings();
 	}
 	

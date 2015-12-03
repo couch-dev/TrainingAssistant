@@ -7,6 +7,7 @@ import material.Tags;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog.Builder;
 import android.text.Html;
 import de.couchdev.trainingassistant.R;
 
@@ -26,7 +27,7 @@ public class ExerciseInfoPopup extends AlertDialog {
 	}
 	
 	private void build(){      
-        Builder builder = new Builder(getContext());
+        Builder builder = new Builder(getContext(), R.style.ThemeDialog);
         builder.setTitle(exercise);
         String message = getContext().getString(R.string.this_exercise_trains)+" ";
         ArrayList<String> tags = Exercises.getTags(exercise, getContext());

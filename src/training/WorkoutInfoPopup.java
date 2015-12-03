@@ -10,6 +10,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
+import android.support.v7.app.AlertDialog.Builder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -36,7 +37,7 @@ public class WorkoutInfoPopup extends AlertDialog {
 	}
 	
 	private void build(){      
-        Builder builder = new Builder(getContext());
+        Builder builder = new Builder(getContext(), R.style.ThemeDialog);
         builder.setTitle(workout.getName());
         View view = LayoutInflater.from(getContext()).inflate(R.layout.popup_workoutinfo, null);
         TextView text = (TextView) view.findViewById(R.id.ratingText);

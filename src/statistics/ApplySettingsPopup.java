@@ -2,6 +2,7 @@ package statistics;
 
 import general.MenuActivity;
 import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
 import de.couchdev.trainingassistant.R;
@@ -13,9 +14,9 @@ import de.couchdev.trainingassistant.R;
  */
 public class ApplySettingsPopup extends AlertDialog {
 
-	private Context context;
 	private int position;
 	private String name;
+	private Context context;
 
 	public ApplySettingsPopup(Context context, int position, String name) {
 		super(context);
@@ -27,7 +28,7 @@ public class ApplySettingsPopup extends AlertDialog {
 	
 	private void build(){      
 		final MenuActivity activity = (MenuActivity) context;
-        Builder builder = new Builder(context);
+        Builder builder = new Builder(getContext(), R.style.ThemeDialog);
         builder.setTitle(R.string.apply_settings);
         builder.setMessage(name);
         builder.setPositiveButton(R.string.accept, new DialogInterface.OnClickListener() {

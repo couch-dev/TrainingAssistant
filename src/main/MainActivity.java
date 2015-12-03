@@ -47,6 +47,7 @@ public class MainActivity extends Activity {
      * Applies the theme color to all views.
      */
     private void applyThemeColor(){
+    	manager.loadSettings();
         Button settings = (Button) findViewById(R.id.settingsButton);
         Drawable image = getResources().getDrawable(R.drawable.settings_button);
         image.setColorFilter(Colors.getThemeColor(), Mode.MULTIPLY);
