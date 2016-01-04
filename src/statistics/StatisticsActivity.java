@@ -281,7 +281,7 @@ public class StatisticsActivity extends BackAndMenuButtonActivity{
         int yearIndex = mngr.getYearIndex();
         TextView text = (TextView) findViewById(R.id.yourWeekText);
         int workouts = stats[yearIndex][woy];
-    	String string = text.getText()+": <b>"+workouts+"</b> "+getString(R.string.workout);
+    	String string = getString(R.string.your_week)+": <b>"+workouts+"</b> "+getString(R.string.workout);
         if(workouts == 1){
         	text.setText(Html.fromHtml(string));
         } else{
